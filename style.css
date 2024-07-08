@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.cover-img {
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+}
+
+nav {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    --width: 0%;
+}
+
+button::after {
+    content: "";
+    width: var(--width);
+    height: 2px;
+    background-color: #F5D95D;
+    transition: 500ms ease-in-out;
+}
+
+.focused {
+    transform: scale(1.1);
+}
+
+.focused::after {
+    width: 100%;
+}
