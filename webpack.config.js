@@ -1,10 +1,23 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/script.js',
+  entry: {
+    index: './src/script.js',
+    home: './src/homepage.js',
+    menu: './src/menupage.js',
+    contact: './src/contactpage.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      title: 'Aurum Cuisine',
+    }),
+  ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
  module: {
    rules: [
@@ -12,6 +25,14 @@ module.exports = {
        test: /\.css$/i,
        use: ['style-loader', 'css-loader'],
      },
+     {
+      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      type: 'asset/resource',
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      type: 'asset/resource',
+    },
    ],
  },
 };

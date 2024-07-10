@@ -1,4 +1,7 @@
 import './style.css';
+import homePage from "./homepage";
+import menuPage from "./menupage";
+import contactPage from "./contactpage";
 
 const home_btn = document.querySelector(".home");
 const menu_btn = document.querySelector(".menu");
