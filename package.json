@@ -1,0 +1,26 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Simple landing page for a restaurant",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Unpetrified/restaurant.git"
+  },
+  "author": "Unpetrified",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unpetrified/restaurant/issues"
+  },
+  "homepage": "https://github.com/Unpetrified/restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
