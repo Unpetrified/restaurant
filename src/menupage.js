@@ -1,3 +1,6 @@
+// import nutSoupImage from './assets/nut-soup.jpg';
+let createElement = require("./createEle");
+
 class Dish {
     constructor(name, description, img_url) {
         this.name = name;
@@ -6,7 +9,7 @@ class Dish {
     }
 }
 
-export function menuPage() {
+function menuPage() {
     const menu_page_heading = createElement("h2", "menu-heading", "Welcome To Fine Dining");
 
     const menu_page_nav = createElement("ul", "dish-category");
@@ -20,10 +23,10 @@ export function menuPage() {
 
     const dishes_section = createElement("section", "dishes");
 
-    let egusi = new Dish("egusi", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", "./assets/nut-soup.jpg");
-    let oha = new Dish("oha", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", "./assets/nut-soup.jpg");
-    let ogbono = new Dish("ogbono", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", "./assets/nut-soup.jpg");
-    let nsala = new Dish("nsala", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", "./assets/nut-soup.jpg");
+    let egusi = new Dish("egusi", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", nutSoupImage);
+    let oha = new Dish("oha", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", nutSoupImage);
+    let ogbono = new Dish("ogbono", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", nutSoupImage);
+    let nsala = new Dish("nsala", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, suscipit", nutSoupImage);
 
     const dishes = [egusi, oha, ogbono, nsala];
 
@@ -57,3 +60,5 @@ export function menuPage() {
     document.querySelector(".container").append(menu_page_heading);
     document.querySelector(".container").append(menu_page);
 }
+
+module.exports = menuPage;

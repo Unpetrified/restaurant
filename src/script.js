@@ -1,7 +1,8 @@
 import './style.css';
-import homePage from "./homepage";
-import menuPage from "./menupage";
-import contactPage from "./contactpage";
+
+let homePage = require("./homepage");
+let contactPage = require("./contactpage");
+let menuPage = require("./menupage");
 
 const home_btn = document.querySelector(".home");
 const menu_btn = document.querySelector(".menu");
@@ -53,12 +54,4 @@ function toggleActive(clicked_btn) {
             menu_btn.classList.remove("focused");
             break;
     }
-}
-
-function createElement(element, className, text="") {
-    let ele = document.createElement(element);
-    ele.classList.add(className);
-    ele.textContent = text;
-
-    return ele
 }
