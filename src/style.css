@@ -25,7 +25,7 @@ header {
     padding: 10px 40px;
 }
 
-.logo {
+#logo {
     width: 350px;
     height: 80px;
     object-fit: cover;
@@ -84,76 +84,4 @@ button::after {
     text-align: center;
     padding: 20px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-}
-
-/* menu css */
-.menu-page {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-.menu-heading {
-    font-size: 3vw;
-    font-weight: 100;
-    text-align: center;
-}
-
-.dish-category {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-}
-
-.dish-category li {
-    list-style: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.dish-category li:nth-of-type(3) {
-    border-bottom: 4px solid #F6A81B;
-}
-
-.dishes {
-    display: grid;
-    padding: 10px 50px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.dish {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.dish img {
-    border-radius: 50px;
-    width: 200px;
-    height: 150px;
-}
-
-.dish-name {
-    font-size: 1.5em;
-    margin: 0;
-    text-transform: capitalize;
-}
-/* contact css */
-
-.contact-page {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-    margin: 20px;
-    padding: 10px 50px;
-    border-radius: 10px;
-}
-
-.contact-heading {
-    font-size: 3vw;
-    font-weight: 100;
-    text-align: center;
-}
-
-.address {
-    font-size: 1.5em;
 }

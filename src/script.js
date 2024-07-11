@@ -1,8 +1,10 @@
 import './style.css';
+import menuPage from './menupage';
+import homePage from './homepage';
+import contactPage from './contactpage';
+import logo from './assets/Aurum Cuisine.png';
 
-let homePage = require("./homepage");
-let contactPage = require("./contactpage");
-let menuPage = require("./menupage");
+document.querySelector("#logo").setAttribute("src", logo);
 
 const home_btn = document.querySelector(".home");
 const menu_btn = document.querySelector(".menu");

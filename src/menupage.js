@@ -1,4 +1,5 @@
-// import nutSoupImage from './assets/nut-soup.jpg';
+import './menu.css';
+import nutSoupImage from './assets/nut-soup.jpg';
 let createElement = require("./createEle");
 
 class Dish {
@@ -9,7 +10,7 @@ class Dish {
     }
 }
 
-function menuPage() {
+export default function menuPage() {
     const menu_page_heading = createElement("h2", "menu-heading", "Welcome To Fine Dining");
 
     const menu_page_nav = createElement("ul", "dish-category");
@@ -61,4 +62,4 @@ function menuPage() {
     document.querySelector(".container").append(menu_page);
 }
 
-module.exports = menuPage;
+// module.exports = menuPage;
